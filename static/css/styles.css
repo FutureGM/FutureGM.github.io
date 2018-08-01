@@ -1,0 +1,316 @@
+/*
+Color Palletes
+------------------------------
+#8789C0 (UBE)
+#45F0DF (Turquoise)
+#EEE0CB (Almond)
+#8380B6 (Lavender Purple)
+#111D4A (Oxford Blue)
+#C62E65 (Dingy Dungeon)
+#2F1847 (Russian Violet)
+#462255 (Japanese Violet)
+#313B72 (Deep Koamaru)
+#CC0033 (Scarlet)
+#5F6A72 (Grey)
+#000000 (Black)
+#BCC6CC (Metallic Silver)
+*/
+html {
+    box-sizing: border-box;
+}
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+/*
+Global Styles
+-------------------------------
+*/
+a {
+    color: #EEE0CB;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+body {
+    background: #000000;
+    font-family: 'Georgia', serif;
+    line-height: 1.2;
+    margin: 0;
+}
+
+h1{
+    font-size: 80px;
+}
+
+h2{
+    font-size: 40px;
+    margin-top: 0;
+}
+
+h3{
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: 'Unna', serif;
+    font-weight: 400;
+}
+
+/* h2, p {
+    margin: 0;
+} */
+
+
+/*border box model fix
+--------------------------------------
+*/
+
+
+/* p {
+    text-align: left;
+} */
+/*Global Classes
+--------------------------------------
+*/
+.btn {
+    background: white;
+    color: #CC0033;
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.col-narrow{
+    /* border: 2px solid black; */
+    float: left;
+    /* overflow-wrap: break-word; */
+    padding-right: 3%;
+    width: 30%;
+}
+
+.col-wide{
+    /* border: 2px solid black; */
+    float: left;
+    padding-left: 20px;
+    width: 70%;
+}
+
+.contact-info a{
+    /* background: #FFF; */
+    display: inline-block;
+    /* font-size: 2em; */
+    /* margin: 10px; */
+    padding: 10px;
+    text-align: center;
+}
+
+.contact-info a:hover{
+        color: #313B72;
+}
+
+.content-wrap {
+    max-width: 980px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 60px 50px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+/*
+Header & Footer
+--------------------------------
+*/
+footer {
+    text-align: center;
+}
+
+footer a {
+    display: inline-block;
+    font-weight: bold;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header{
+    padding-top: 50px;
+    position: relative;
+    text-align: center;
+}
+header h1, header h2 {
+    color: #FFF;
+    font-family: 'Cinzel', serif;
+    margin: 0;
+    padding: 5px;
+}
+
+
+.download{
+    /* bottom: 0; */
+    /* position: absolute; */
+    /* right: 0; */
+}
+.profile-img{
+    border-radius: 50%;
+    /* float: left;
+    margin: 50px; */
+    /* padding: 50px; */
+    /* width: 200px; */
+}
+/*Navigation
+--------------------------------
+*/
+nav {
+    text-align: center;
+    background: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+nav a {
+    display: inline-block;
+    font-weight: bold;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/*
+Work Experience
+---------------------------------
+*/
+h3 ~ p {
+    margin: 0;
+}
+.job-description {
+    margin-bottom: 25px;
+}
+.job-description p:first-of-type{
+    margin-top: 0;
+}
+.work {
+    background: linear-gradient(rgba(188, 198, 204, 1), rgba(188, 198, 204, 0.5)), url(http://foxsportsuniversity.com/wp-content/uploads/2015/08/Rutgers-red-R-on-white.png) no-repeat fixed;
+    background-size: cover;
+    max-width: 1600px;
+}
+
+/*
+Education
+----------------------------------
+*/
+.education {
+    background: linear-gradient(rgba(188, 198, 204, 1), rgba(188, 198, 204, 0.5)), url(http://foxsportsuniversity.com/wp-content/uploads/2015/08/Rutgers-red-R-on-white.png) no-repeat fixed;
+    background-size: cover;
+    max-width: 1600px;
+}
+
+p + h3{
+    margin-top: 30px;
+}
+
+/*
+Media Queries
+---------------------------
+*/
+/*Desktop/Laptop*/
+
+@media only screen and (min-width: 800px) {
+    header, footer {
+        background: linear-gradient(rgba(204, 0, 51, 1), rgba(204, 0, 51, 0.5)), url(http://foxsportsuniversity.com/wp-content/uploads/2015/08/Rutgers-red-R-on-white.png) no-repeat fixed;
+        background-size: cover;
+        color: #BCC6CC;
+    }
+    .col-narrow{
+        /* border: 2px solid black; */
+        float: left;
+        overflow-wrap: normal;
+        padding-right: 3%;
+        width: 30%;
+    }
+    .col-wide{
+        /* border: 2px solid black; */
+        float: left;
+        padding-left: 20px;
+        width: 70%;
+    }
+}
+    /*Tablet*/
+@media only screen and (max-width: 799px) {
+    header, footer {
+        background: linear-gradient(rgba(204, 0, 51, 1), rgba(204, 0, 51, 0.5)), url(http://foxsportsuniversity.com/wp-content/uploads/2015/08/Rutgers-red-R-on-white.png) no-repeat fixed;
+        background-size: cover;
+        color: #BCC6CC;
+        overflow-wrap: normal;
+        text-align: center;
+    }
+    .col-narrow{
+        /* border: 2px solid black; */
+        display: inline-block;
+        float: none;
+        margin: auto;
+        overflow-wrap: normal;
+        padding-right: 3%;
+        text-align: left;
+        width: 80%;
+    }
+    .col-wide{
+        /* border: 2px solid black; */
+        float: none;
+        overflow-wrap: normal;
+        padding-left: 20px;
+        /* text-align: center; */
+        width: 80%;
+    }
+    .job-description {
+        margin-bottom: 25px;
+        padding: 3%;
+    }
+    .profile-img{
+        margin: 0 auto;
+        width: 200px;
+    }
+}
+    /*Mobile*/
+@media only screen and (max-width: 500px) {
+    header, footer{
+        background: linear-gradient(rgba(204, 0, 51, 1), rgba(204, 0, 51, 0.5)), url(http://foxsportsuniversity.com/wp-content/uploads/2015/08/Rutgers-red-R-on-white.png) no-repeat fixed;
+        background-size: cover;
+        color: #BCC6CC;
+        min-width: 200px;
+        overflow-wrap: normal;
+        text-align: center;
+    }
+    h1, h2 {
+        overflow-wrap: normal;
+        text-align: center;
+    }
+    .col-narrow{
+        /* border: 2px solid black; */
+        display: inline-block;
+        float: none;
+        margin: auto;
+        overflow-wrap: normal;
+        padding-right: 3%;
+        text-align: center;
+        width: 80%;
+    }
+    .col-wide{
+        /* border: 2px solid black; */
+        float: none;
+        overflow-wrap: normal;
+        padding-left: 20px;
+        text-align: center;
+        width: 80%;
+    }
+    .job-description {
+        margin-bottom: 25px;
+        padding: 3%;
+    }
+    .profile-img{
+        width: 200px;
+    }
+}
