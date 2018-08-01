@@ -15,6 +15,10 @@ Color Palletes
 #000000 (Black)
 #BCC6CC (Metallic Silver)
 */
+
+/*border box model fix
+--------------------------------------
+*/
 html {
     box-sizing: border-box;
 }
@@ -61,12 +65,6 @@ h1, h2 {
 /* h2, p {
     margin: 0;
 } */
-
-
-/*border box model fix
---------------------------------------
-*/
-
 
 /* p {
     text-align: left;
@@ -149,12 +147,12 @@ header h1, header h2 {
     padding: 5px;
 }
 
+/* .download{
+    bottom: 0;
+    position: absolute;
+    right: 0;
+} */
 
-.download{
-    /* bottom: 0; */
-    /* position: absolute; */
-    /* right: 0; */
-}
 .profile-img{
     border-radius: 50%;
     /* float: left;
@@ -178,6 +176,50 @@ nav a {
     padding: 15px 20px;
     text-decoration: none;
     text-transform: uppercase;
+}
+/*
+Technical Skills
+---------------------------------
+*/
+h3 ~ p {
+    margin: 0;
+}
+.job-description {
+    margin-bottom: 25px;
+}
+.job-description p:first-of-type{
+    margin-top: 0;
+}
+#tech {
+    background: linear-gradient(rgba(188, 198, 204, 1), rgba(188, 198, 204, 0.5)), url(http://foxsportsuniversity.com/wp-content/uploads/2015/08/Rutgers-red-R-on-white.png) no-repeat fixed;
+    background-size: cover;
+    max-width: 1600px;
+}
+
+#tech ~ a{
+    color: #C03;
+}
+/*
+Projects
+---------------------------------
+*/
+h3 ~ p {
+    margin: 0;
+}
+.job-description {
+    margin-bottom: 25px;
+}
+.job-description p:first-of-type{
+    margin-top: 0;
+}
+#projects {
+    background: linear-gradient(rgba(188, 198, 204, 1), rgba(188, 198, 204, 0.5)), url(http://foxsportsuniversity.com/wp-content/uploads/2015/08/Rutgers-red-R-on-white.png) no-repeat fixed;
+    background-size: cover;
+    max-width: 1600px;
+}
+
+#projects a {
+    color: #C03;
 }
 /*
 Work Experience
@@ -208,6 +250,9 @@ Education
     max-width: 1600px;
 }
 
+.education a {
+    color: #C03;
+}
 p + h3{
     margin-top: 30px;
 }
