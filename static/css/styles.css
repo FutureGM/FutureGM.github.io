@@ -285,6 +285,9 @@ Media Queries
 }
     /*Tablet*/
 @media only screen and (max-width: 799px) {
+    html {
+        font-size: 0.80rem;
+    }
     header, footer {
         background: linear-gradient(rgba(204, 0, 51, 1), rgba(204, 0, 51, 0.5)), url(http://foxsportsuniversity.com/wp-content/uploads/2015/08/Rutgers-red-R-on-white.png) no-repeat fixed;
         background-size: cover;
@@ -321,6 +324,9 @@ Media Queries
 }
     /*Mobile*/
 @media only screen and (max-width: 500px) {
+    html{
+        font-size: 0.65rem;
+    }
     header, footer{
         background: linear-gradient(rgba(204, 0, 51, 1), rgba(204, 0, 51, 0.5)), url(http://foxsportsuniversity.com/wp-content/uploads/2015/08/Rutgers-red-R-on-white.png) no-repeat fixed;
         background-size: cover;
